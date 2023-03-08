@@ -10,10 +10,14 @@ tiktokLiveConnection.connect().then(state => {
 
 tiktokLiveConnection.on('gift', data => {
     if (data.giftType === 1 && !data.repeatEnd) {
-        console.log(`${data.nickname} muchas gracias!! 🦸`);
+        console.log(`${data.nickname} muchas gracias por esos regalos!!! 🦸`);
     } else {
-        console.log(`${data.nickname} muchas gracias por tu regalo!! 🦸🎁 `);
+        console.log(`${data.nickname} muchas gracias por tus regalos!! 🦸🎁 `);
     }
+})
+
+tiktokLiveConnection.on('chat', data => {
+    console.log(`💬 ${data.nickname} dice : ${data.comment} `);
 })
 
 tiktokLiveConnection.on('like', data => {
