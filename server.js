@@ -1,6 +1,6 @@
 const { WebcastPushConnection } = require('tiktok-live-connector');
 let tiktokUserName = "holasoymalva"; // 👈 Change this
-let tiktokLiveConnection = new WebcastPushConnection(tiktokUsername);
+let tiktokLiveConnection = new WebcastPushConnection(tiktokUserName);
 
 tiktokLiveConnection.connect().then(state => {
 
