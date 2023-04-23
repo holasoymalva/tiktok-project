@@ -1,8 +1,4 @@
-# tiktok-project
-
-
-
-## Use the Sayme Core to build a mesenger chatbot 🦄
+# 🔴 Tiktok Live Project 
 
 #### Download Project
   
