@@ -53,5 +53,9 @@ function setupEventListeners(connection) {
     connection.on('disconnect', () => {
         console.log('⚠️ Desconectado del stream. Intentando reconectar...');
     });
+
+    connection.on('rankingUpdate', data => {
+        console.log(`🏆 Actualización del ranking: ${JSON.stringify(data)}`);
+    });
 }
 connectToLive();
