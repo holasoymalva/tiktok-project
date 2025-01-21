@@ -42,6 +42,10 @@ function setupEventListeners(connection) {
         console.log(data.nickname, "gracias por tu follow!!! 🦄✨");
     });
 
+    connection.on('share', data => {
+        console.log(`🔄 ${data.nickname} compartió el stream! Muchas gracias!`);
+    });
+
     connection.on('subscribe', data => {
         console.log(`⭐ ${data.nickname} se suscribió al canal!`);
     });
