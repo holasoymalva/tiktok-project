@@ -41,5 +41,9 @@ function setupEventListeners(connection) {
     connection.on('follow', (data) => {
         console.log(data.nickname, "gracias por tu follow!!! 🦄✨");
     });
+
+    connection.on('subscribe', data => {
+        console.log(`⭐ ${data.nickname} se suscribió al canal!`);
+    });
 }
 connectToLive();
