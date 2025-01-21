@@ -57,5 +57,9 @@ function setupEventListeners(connection) {
     connection.on('rankingUpdate', data => {
         console.log(`🏆 Actualización del ranking: ${JSON.stringify(data)}`);
     });
+
+    connection.on('socketClose', () => {
+        console.log('🔒 Conexión cerrada por el servidor');
+    });
 }
 connectToLive();
