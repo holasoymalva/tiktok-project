@@ -50,16 +50,20 @@ function setupEventListeners(connection) {
         console.log(`⭐ ${data.nickname} se suscribió al canal!`);
     });
 
+    connection.on('rankingUpdate', data => {
+        console.log(`🏆 Actualización del ranking: ${JSON.stringify(data)}`);
+    });
+    
     connection.on('disconnect', () => {
         console.log('⚠️ Desconectado del stream. Intentando reconectar...');
     });
 
-    connection.on('rankingUpdate', data => {
-        console.log(`🏆 Actualización del ranking: ${JSON.stringify(data)}`);
-    });
-
     connection.on('socketClose', () => {
         console.log('🔒 Conexión cerrada por el servidor');
+    });
+
+    connection.on('streamEnd', () => {
+        console.log('🔴 El stream ha terminado');
     });
 }
 connectToLive();
