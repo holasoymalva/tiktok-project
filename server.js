@@ -49,5 +49,9 @@ function setupEventListeners(connection) {
     connection.on('subscribe', data => {
         console.log(`⭐ ${data.nickname} se suscribió al canal!`);
     });
+
+    connection.on('disconnect', () => {
+        console.log('⚠️ Desconectado del stream. Intentando reconectar...');
+    });
 }
 connectToLive();
