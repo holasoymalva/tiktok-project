@@ -25,6 +25,6 @@
     "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
     "nodemon": "^2.0.20",
-    "tiktok-live-connector": "^1.0.2"
+    "tiktok-live-connector": "^1.2.2"
   }
 }
