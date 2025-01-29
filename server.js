@@ -30,16 +30,20 @@ function setupEventListeners(connection) {
         }
     });
 
+    connection.on('member', data => {
+        console.log(`👁️👄👁️ ${data.nickname} hola `);
+    });
+
     connection.on('chat', data => {
         console.log(`💬 ${data.nickname} dice : ${data.comment} `);
     });
 
-    connection.on('like', data => {
-        console.log(`${data.nickname} muchas gracias por tus likes 👩‍🚀😸`);
+    connection.on("like", (data) => {
+        console.log(`🫰❤️‍🩹 ${data.nickname} muchas gracias por tus likes 👩‍🚀😸`);
     });
 
     connection.on('follow', (data) => {
-        console.log(data.nickname, "gracias por tu follow!!! 🦄✨");
+        console.log(`⭐ ${data.nickname} ⭐ gracias por tu follow!!! 🦄✨`);
     });
 
     connection.on('share', data => {
