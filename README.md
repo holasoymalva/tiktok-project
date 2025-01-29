@@ -23,7 +23,7 @@ TikTok Live Connector es una herramienta que permite interactuar en tiempo real 
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/malvabombom/tiktok-project.git
+   git clone https://github.com/holasoymalva/tiktok-project.git
    cd tiktok-project
    ```
 
@@ -91,9 +91,9 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para má
 
 ## 📩 Contacto y Soporte
 
-🔹 **Autor:** [malvabombom](https://github.com/malvabombom)  
-🔹 **Repositorio:** [GitHub](https://github.com/malvabombom/tiktok-project)  
-🔹 **Reportar errores:** [Issues](https://github.com/malvabombom/tiktok-project/issues)
+🔹 **Autor:** [holasoymalva](https://github.com/holasoymalva)  
+🔹 **Repositorio:** [GitHub](https://github.com/holasoymalva/tiktok-project)  
+🔹 **Reportar errores:** [Issues](https://github.com/holasoymalva/tiktok-project/issues)
 
 ---
 
