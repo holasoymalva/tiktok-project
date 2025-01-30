@@ -1,6 +1,6 @@
 const { WebcastPushConnection } = require('tiktok-live-connector');
 
-let tiktokUserName = "holasoymalva"; // 👈 Change this
+let tiktokUserName = "agrega-tu-usuario-de-Tiktok"; // 👈 Cambia esto por tu Usuario de Tiktok
 
 let tiktokLiveConnection = new WebcastPushConnection(tiktokUserName, {
     enableExtendedGiftInfo: true,
